@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: stream
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      rabbit:
+        bindings:
+          Test:
+            producer:
+              auto-bind-dlq: true
+server:
+  port: 8877

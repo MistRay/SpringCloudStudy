@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: eventserver
+server:
+  port: 8369

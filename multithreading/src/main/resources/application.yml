@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: multithreading
+server:
+  port: 8055

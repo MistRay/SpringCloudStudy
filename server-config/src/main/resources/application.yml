@@ -1,0 +1,19 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # git ��url,����ʵ��ʵʱˢ��
+          uri: https://github.com/forezp/SpringcloudConfig/
+          # ����·��Ϊrespo
+          searchPaths: respo
+      # ��ǩΪmaster
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:20001/eureka/
