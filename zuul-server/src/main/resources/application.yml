@@ -1,0 +1,14 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:20001/eureka/
+spring:
+  application:
+    name: gateway-service-zuul
+server:
+  port: 7355
+zuul:
+  routes:
+    zuultest:
+      path: /**
+      url: http://www.mistlight.com/
