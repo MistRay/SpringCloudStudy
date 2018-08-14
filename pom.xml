@@ -32,6 +32,7 @@
         <module>stream-client</module>
         <module>stream-server</module>
         <module>zipkin-server</module>
+        <module>zuul-server</module>
 
         <!--<module>example</module>-->
     </modules>
